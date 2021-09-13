@@ -1,0 +1,23 @@
+  Bug Report ID:        Created Date:        Update Date:
+  
+  Summary:
+  Project:
+  Component:
+  Version:
+  Severity:
+  Priority:
+  Status:
+  Author:
+  Assigned To:
+  Environment:
+  Description:
+  reproducibility:
+
+
+  Steps to reproduce:
+  Expected Result:
+  Result:
+
+  Attachment:
+  additional info:
+
