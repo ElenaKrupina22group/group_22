@@ -222,17 +222,29 @@ where role_name like '%QA engineer';
 
  25. Вывести количество QA инженеров
 select count(role_name)
- from roles
- where role_name like '%QA engineer';
+from roles
+join roles_employees
+on roles.id = roles_employees.role_id 
+join employees
+on roles_employees.employee_id = employees.id 
+where role_name like '%QA engineer';
 
  26. Вывести количество Middle специалистов.
 select count(role_name)
-from roles 
+from roles
+join roles_employees
+on roles.id = roles_employees.role_id 
+join employees
+on roles_employees.employee_id = employees.id 
 where role_name like 'Middle%';
 
  27. Вывести количество разработчиков
-select count(role_name) 
-from roles 
+select count(role_name)
+from roles
+join roles_employees
+on roles.id = roles_employees.role_id 
+join employees
+on roles_employees.employee_id = employees.id 
 where role_name like '%developer';
 
  28. Вывести фонд (сумму) зарплаты разработчиков.
